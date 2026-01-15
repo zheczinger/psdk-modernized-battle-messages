@@ -2,10 +2,17 @@
 # https://github.com/zheczinger/battle-log
 module Battle
   class Scene
-    module ZVBattleMsgSupportingZVBattleLog
-      def zv_log_message(...) = nil unless method_defined?(:zv_log_message)
-      def zv_display_message_logged? = false unless method_defined?(:zv_display_message_logged?)
+    module ZVBattleMsgZVBattleLog
+      def zv_log_message(...) = nil unless
+        Scene.method_defined?(:zv_log_message, true) ||
+        Scene.private_method_defined?(:zv_log_message, true)
+
+      private
+
+      def zv_display_message_logged?(...) = false unless
+        Scene.method_defined?(:zv_display_message_logged?, true) ||
+        Scene.private_method_defined?(:zv_display_message_logged?, true)
     end
-    prepend ZVBattleMsgSupportingZVBattleLog
+    prepend ZVBattleMsgZVBattleLog
   end
 end
