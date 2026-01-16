@@ -1,6 +1,6 @@
 # Modernized Battle Messages for PSDK
 ![img](https://img.shields.io/badge/version-0.5.1-brightgreen?style=for-the-badge)
-![img](https://img.shields.io/badge/psdk-26.50-blue?style=for-the-badge)
+![img](https://img.shields.io/badge/psdk-.26.50-blue?style=for-the-badge)
 
 > [!WARNING]
 > If your PSDK version is 26.50 or newer, and the version of this plugin you're using is v0.4.0 or older, then you must upgrade your plugin to the latest version. Please uninstall your older version of the plugin before installing the latest.
@@ -33,7 +33,7 @@ To uninstall:
 3. Delete `193208.csv` or whatever you named that CSV file from the `Data/Text/Dialogs` folder in your project.
 
 ## Dependencies
-- PSDK 26.50 or newer
+- PSDK .26.50 or newer
 
 ## Languages
 - English
