@@ -5,11 +5,11 @@
 > [!WARNING]
 > If you have v0.4.0 or an older version of this plugin, and your PSDK version is .26.50 or newer, then you must upgrade your plugin. Please uninstall your older version of the plugin first.
 
-- **:package: [Installation](#installation)**
-- **:earth_americas: [Languages](#languages)**
-- **⚙️ [Settings](#settings)**
-- **:handshake: [Compatibility](#compatibility)**
-- **:mega: [Credits](#credits)**
+- **:package: [Installation](#package-installation)**
+- **:earth_americas: [Languages](#earth_americas-languages)**
+- **:gear: [Settings](#gear-settings)**
+- **:handshake: [Compatibility](#handshake-compatibility)**
+- **:mega: [Credits](#mega-credits)**
 
 Do you find pressing through "It's super effective!", "*[Battler]*'s Attack rose!", and other messages like them to be tedious? This PSDK plugin replaces them with concise animations to make battles feel snappier and less of a button masher.
 
@@ -34,7 +34,7 @@ If you're already using the `193208.csv` filename for a different file, then you
 - :us: English
 - :fr: French
 
-## ⚙️ Settings
+## :gear: Settings
 The following settings are available in the `Data/configs/plugins/zv_battle_msg_config.json` file in your project.
 
 ```json
