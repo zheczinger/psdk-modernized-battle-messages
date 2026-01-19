@@ -15,4 +15,7 @@ proc do
       zv_create_damage_numbers_animation
     ]
   )
+
+  license_file = File.join('licenses', 'ZVBattleMessages-LICENSE.md')
+  File.delete(license_file) if File.exist?(license_file)
 end.call

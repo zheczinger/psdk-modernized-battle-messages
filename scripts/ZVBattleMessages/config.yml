@@ -2,11 +2,12 @@
 name: ZVBattleMessages
 authors:
 - zhec
-version: 0.5.1.0
+version: 0.5.3.0
 deps: []
 psdk_compatibility_script: psdk.rb
 retry_psdk_compatibility_after_plugin_load: false
 added_files:
+- licenses/ZVBattleMessages-LICENSE.md
 - Data/configs/plugins/zv_battle_msg_config.json
 - graphics/animations/zv-battle-messages/*.png
 - audio/se/zv-battle-messages-*.ogg
