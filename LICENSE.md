@@ -1,11 +1,15 @@
-The following files are modified versions of the following original works.
-- `audio/se/zv-battle-messages-perish-countdown.ogg`
-   - Clock, ticking by natalie -- https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg -- "Public Domain"
+### Author
+- zhec
 
-- `audio/se/zv-battle-messages-perish-death.ogg`
-   - BELL.wav by kgeshev -- https://freesound.org/s/378799/ -- licensed under CC0-1.0
+### Attribution
+- ["Clock, ticking"](https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg) by natalie is under public domain. This work uses it in `audio/se/zv-battle-messages-perish-countdown.ogg`.
+- [BELL.wav](https://freesound.org/s/378799/) by [kgeshev](https://freesound.org/people/kgeshev/) is licensed under CC0 1.0. This work uses it in `audio/se/zv-battle-messages-perish-death.ogg`.
+- Special thanks to [Aelysya](https://github.com/Aelysya) for providing French translations.
 
-Otherwise, the rest of the project is licensed under CC-BY-4.0.
+### License
+The rest of this work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+![](https://mirrors.creativecommons.org/presskit/icons/cc.svg) ![](https://mirrors.creativecommons.org/presskit/icons/by.svg)
 
 ```
 Attribution 4.0 International
@@ -404,6 +408,3 @@ public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
 ```
-
-### Special Thanks
-- Aelysya for providing French translations.

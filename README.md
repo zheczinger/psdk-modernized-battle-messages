@@ -124,15 +124,7 @@ The **`silence_messages`** field in the JSON config file expects an object with 
 - [Battle Log for PSDK](https://github.com/zheczinger/psdk-battle-log): Compatible since v0.5.3 of this plugin. Battle messages replaced or silenced by this plugin are preserved in that plugin's battle log.
 
 ## :mega: Credits
-**Author:**
-- zhec
-
-**External Assets:**
-- Clock, ticking by natalie -- https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg
-- BELL.wav by kgeshev -- https://freesound.org/s/378799/
-
-**Special Thanks:**
-- [Aelysya](https://github.com/Aelysya/) for providing the French translations
+See [LICENSE](LICENSE.md).
 
 [release-badge]: https://img.shields.io/github/v/release/zheczinger/psdk-modernized-battle-messages?display_name=release&logo=github&color=blue
 [psdk-version-badge]: https://img.shields.io/badge/PSDK-.26.50+-6961F6
