@@ -16,7 +16,7 @@ Do you find pressing through "It's super effective!", "\[Battler\]'s Attack rose
 
 ## :package: Installation
 **To install:**
-1. Download `ZVBattleMessages.psdkplug` and `193208.csv` from the [newest release](https://github.com/zheczinger/psdk-modernized-battle-messages/releases/latest).
+1. Download `ZVBattleMessages.psdkplug` and `193208.csv` from the [newest release](https://github.com/zheczinger/modernized-battle-messages/releases/latest).
 2. Put the downloaded .psdkplug file in the `scripts` folder in your project.
 3. Open the `cmd.bat` file in your project. This will bring up a command prompt.
 4. Enter `psdk --util=plugin load` in the command prompt.
@@ -121,11 +121,11 @@ The **`silence_messages`** field in the JSON config file expects an object with 
   | **`note`** | String | An optional personal note.
 
 ## :handshake: Compatibility
-- [Battle Log for PSDK](https://github.com/zheczinger/psdk-battle-log): Compatible since v0.5.3 of this plugin. Battle messages replaced or silenced by this plugin are preserved in that plugin's battle log.
+- [Battle Log for PSDK](https://github.com/zheczinger/battle-log): Compatible since v0.5.3 of this plugin. Battle messages replaced or silenced by this plugin are preserved in that plugin's battle log.
 
 ## :mega: Credits
 See [LICENSE](LICENSE.md).
 
-[release-badge]: https://img.shields.io/github/v/release/zheczinger/psdk-modernized-battle-messages?display_name=release&logo=github&color=blue
+[release-badge]: https://img.shields.io/github/v/release/zheczinger/modernized-battle-messages?display_name=release&logo=github&color=blue
 [psdk-version-badge]: https://img.shields.io/badge/PSDK-.26.50+-6961F6
-[download-total-badge]: https://img.shields.io/github/downloads/zheczinger/psdk-modernized-battle-messages/total?logo=github
+[download-total-badge]: https://img.shields.io/github/downloads/zheczinger/modernized-battle-messages/total?logo=github
