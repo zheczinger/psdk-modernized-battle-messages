@@ -143,7 +143,7 @@ module ZVBattleMsg
       [0, -2] # Enemy battler
     ]
 
-    def digit_y_displacement = -5
+    def digit_y_displacement = -4
     def move_duration = 0.3
     def wait_duration = 0.65
     def outline_size = Configs.zv_battle_msg.damage_numbers.outline_size
