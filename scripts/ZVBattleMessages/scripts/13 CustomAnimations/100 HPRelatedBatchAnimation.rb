@@ -42,12 +42,10 @@ module ZVBattleMsg
     # @return [Array<ZVBattleMsg::PopupMessage>]
     def hit_related_popups(target, effectiveness:, critical:)
       target_sprite = @scene.visual.battler_sprite(target.bank, target.position)
-      popups = [
+      return [
         critical_hit_popup(target_sprite, critical),
         hit_effectiveness_popup(target_sprite, effectiveness)
       ].compact
-
-      return popups
     end
 
     # @param target_sprite [BattleUI::PokemonSprite]
