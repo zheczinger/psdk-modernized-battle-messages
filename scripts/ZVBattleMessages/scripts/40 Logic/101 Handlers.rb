@@ -10,7 +10,7 @@ module Battle
 
           unless no_message
             text_index = stat_text_index(amount, power)
-            @scene.zv_log_battle_message(parse_text_with_pokemon(19, TEXT_POS[stat][text_index], target))
+            @scene.zv_log_message(parse_text_with_pokemon(19, TEXT_POS[stat][text_index], target))
           end
         end
       end
@@ -22,24 +22,30 @@ module Battle
         def damage_change(*args, **_kwargs, &_block)
           skill = args[3]
           @logic.zv_battle_msg_internal.critical_hits << [skill&.critical_hit?]
-          ret = super
-          @logic.zv_battle_msg_internal.critical_hits.pop
-          return ret
+          begin
+            return super
+          ensure
+            @logic.zv_battle_msg_internal.critical_hits.pop
+          end
         end
 
         def drain(*args, **_kwargs, &_block)
           skill = args[3]
           @logic.zv_battle_msg_internal.critical_hits << [skill&.critical_hit?]
-          ret = super
-          @logic.zv_battle_msg_internal.critical_hits.pop
-          return ret
+          begin
+            return super
+          ensure
+            @logic.zv_battle_msg_internal.critical_hits.pop
+          end
         end
 
         def heal_change(...)
           @logic.zv_battle_msg_internal.critical_hits << []
-          ret = super
-          @logic.zv_battle_msg_internal.critical_hits.pop
-          return ret
+          begin
+            return super
+          ensure
+            @logic.zv_battle_msg_internal.critical_hits.pop
+          end
         end
       end
       prepend ZVBattleMsgDamageHandler

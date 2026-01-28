@@ -21,14 +21,15 @@ module ZVBattleMsg
       self.opacity = 0
     end
 
+    # @param extra_duration [Float]
     # @return [Yuki::Animation::AnimationMixin]
     # @note This animation doesn't dispose
-    def create_animation
+    def create_animation(extra_duration: 0)
       ya = Yuki::Animation
 
       return ya.player(
         number_animation,
-        ya.wait(wait_duration),
+        ya.wait(wait_duration + extra_duration),
         ya.send_command_to(self, :opacity=, 0)
       )
     end
@@ -37,8 +38,8 @@ module ZVBattleMsg
 
     # Move the sprite stack to the target sprite's location
     def move_to_target
-      self.x = @target_sprite.x + x_offset
-      self.y = @target_sprite.y + y_offset
+      self.x = (@target_sprite.x + x_offset).to_i
+      self.y = (@target_sprite.y + y_offset).to_i
     end
 
     # Draw text for the damage value
@@ -142,7 +143,7 @@ module ZVBattleMsg
       [0, -2] # Enemy battler
     ]
 
-    def digit_y_displacement = -5
+    def digit_y_displacement = -4
     def move_duration = 0.3
     def wait_duration = 0.65
     def outline_size = Configs.zv_battle_msg.damage_numbers.outline_size

@@ -12,7 +12,7 @@ module BattleUI
         aura  = UI::StatAnimation.new(viewport, amount, z, @bank) unless out_of_reach
         popup = ZVBattleMsg::StatChangePopup.new(viewport, @scene, self, stat, amount)
         anims = [
-          ya.se_play(stat_se(amount)),
+          ya.send_command_to($game_system, :se_play, stat_se(amount)),
           ya.player(popup.create_animation, ya.dispose_sprite(popup))
         ]
 
@@ -22,8 +22,6 @@ module BattleUI
             ya.scalar(popup.main_duration + 0.2, aura, :animation_progression=, 0, 1),
             ya.dispose_sprite(aura)
           )
-
-          popup.z = [popup.z, aura.z + 1].max
         end
 
         anim = ya.parallel(*anims)
